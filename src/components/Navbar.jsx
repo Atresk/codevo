@@ -5,6 +5,19 @@ import logo from '../assets/logo.png';
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [theme, setTheme] = useState('light');
+
+  useEffect(() => {
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    setTheme(prefersDark ? 'dark' : 'light');
+    document.body.className = prefersDark ? 'dark' : 'light';
+  }, []);
+
+  const toggleTheme = () => {
+    const newTheme = theme === 'light' ? 'dark' : 'light';
+    setTheme(newTheme);
+    document.body.className = newTheme;
+  };
 
   return (
     <nav className="navbar">
