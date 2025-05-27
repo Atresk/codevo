@@ -16,15 +16,12 @@
 .logo {
   width: 8vw;
   height: 8vw;
-  max-width: 48px;
-  max-height: 48px;
+  max-width: 40px;
+  max-height: 40px;
 }
+
 .hamburger {
-  font-size: 1.5rem;
-  background: none;
-  border: none;
-  color: inherit;
-  cursor: pointer;
+  display: none;
 }
 
 .nav-links {
@@ -54,6 +51,16 @@
 
 /* 響應式設計 */
 @media (max-width: 768px) {
+
+  .hamburger {
+    display: flex;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: inherit;
+    cursor: pointer;
+  }
+
   .nav-links {
     display: none;
     flex-direction: column;

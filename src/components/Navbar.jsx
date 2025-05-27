@@ -26,10 +26,12 @@ export default function Navbar() {
           ☰
         </button>
         <img src={logo} className="logo" alt="logo"/>
+        <h1>Codevo</h1>
       </div>
 
       <ul className={`nav-links ${menuOpen ? 'show' : ''}`}>
         <li><Link to="/">首頁</Link></li>
+        <li><Link to="/Page_1">在開始之前</Link></li>
       </ul>
 
       <div className="right">
