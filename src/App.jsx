@@ -2,18 +2,20 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Navbar from './components/Navbar';
-import Page_1 from './pages/Page_1';
+import Sidebar from './components/Sidebar';
+import Learn from './pages/Learn';
 
 function App() {
-    return (
-        <Router>
-            <Navbar />
-            <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/Page_1" element={<Page_1 />} />
-            </Routes>
-        </Router>
-    );
+  return (
+    <Router>
+      <Navbar />
+      <Sidebar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/Learn" element={<Learn />} />
+      </Routes>
+    </Router>
+  );
 }
 
 export default App;
