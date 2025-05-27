@@ -1,34 +1,44 @@
 @font-face {
-  font-family: 'Cubic_11';
-  src: url('./fonts/Cubic_11.woff2') format("woff2"),
-         url('./fonts/Cubic_11.woff') format("woff"),
-         url('./fonts/Cubic_11.ttf') format("truetype");
+    font-family: 'Cubic_11';
+    src:
+        url('./fonts/Cubic_11.woff2') format('woff2'),
+        url('./fonts/Cubic_11.woff') format('woff'),
+        url('./fonts/Cubic_11.ttf') format('truetype');
 }
 
 body {
-  margin: 0;
-  font-family: 'Cubic_11', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    font-family:
+        'Cubic_11',
+        -apple-system,
+        BlinkMacSystemFont,
+        'Segoe UI',
+        'Roboto',
+        'Oxygen',
+        'Ubuntu',
+        'Cantarell',
+        'Fira Sans',
+        'Droid Sans',
+        'Helvetica Neue',
+        sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: 'Cubic_11', source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+    font-family: 'Cubic_11', source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
 body.light {
-  --nav-bg: #ffffff;
-  --text-color: #222;
-  background-color: #ffffff;
-  color: #222;
+    --nav-bg: #ffffff;
+    --text-color: #222;
+    background-color: #ffffff;
+    color: #222;
 }
 
 body.dark {
-  --nav-bg: #121212;
-  --text-color: #fff;
-  background-color: #121212;
-  color: #fff;
+    --nav-bg: #020615;
+    --text-color: #fff;
+    background-color: #020615;
+    color: #fff;
 }
