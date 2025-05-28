@@ -3,7 +3,7 @@ import './GlitchEffectInjector.css';
 
 export default function GlitchEffectInjector() {
   useEffect(() => {
-    const tags = ['h1', 'h2', 'h3', 'p', 'li', 'img', 'button'];
+    const tags = ['h1', 'h2', 'h3', 'p', 'li', 'button'];
     const elements = document.querySelectorAll(tags.join(','));
 
     elements.forEach((el) => {

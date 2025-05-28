@@ -2,6 +2,7 @@ import React from 'react';
 import './Home.css';
 import MessageBoard from '../utils/MessageBoard';
 import logo from '../assets/logo.png';
+import test from './test.jpg'
 
 export default function Home({ sidebarOpen }) {
   return (

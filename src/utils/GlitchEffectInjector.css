@@ -14,15 +14,16 @@
   color: inherit;
   font-size: inherit;
   background: inherit;
+  border: inherit;
   pointer-events: none;
   z-index: -1;
   opacity: 0;
-  mix-blend-mode: difference;
+  mix-blend-mode: normal;
   clip-path: var(--slice-0, inset(50% 50% 50% 50%));
 }
 
 .glitch-on-hover:hover::after {
-  animation: glitch-universal 0.9s steps(2, end);
+  animation: glitch-universal 1.3s infinite steps(2, end);
   opacity: 0.8;
 }
 
@@ -52,3 +53,4 @@
     transform: translate(0);
   }
 }
+
