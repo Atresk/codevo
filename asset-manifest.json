@@ -1,16 +1,17 @@
 {
   "files": {
-    "main.css": "/codevo/static/css/main.ed573484.css",
-    "main.js": "/codevo/static/js/main.5b731c41.js",
+    "main.css": "/codevo/static/css/main.f4766fdd.css",
+    "main.js": "/codevo/static/js/main.81c4cb87.js",
     "static/media/Cubic_11.ttf": "/codevo/static/media/Cubic_11.8d0c38211f3a4791db6f.ttf",
     "static/media/Cubic_11.woff": "/codevo/static/media/Cubic_11.ac82ad78e671a3456e71.woff",
     "static/media/Cubic_11.woff2": "/codevo/static/media/Cubic_11.d8eabedbc8d5ffc0ce5a.woff2",
+    "static/media/test.jpg": "/codevo/static/media/test.417590e16a687fc65d4a.jpg",
     "index.html": "/codevo/index.html",
-    "main.ed573484.css.map": "/codevo/static/css/main.ed573484.css.map",
-    "main.5b731c41.js.map": "/codevo/static/js/main.5b731c41.js.map"
+    "main.f4766fdd.css.map": "/codevo/static/css/main.f4766fdd.css.map",
+    "main.81c4cb87.js.map": "/codevo/static/js/main.81c4cb87.js.map"
   },
   "entrypoints": [
-    "static/css/main.ed573484.css",
-    "static/js/main.5b731c41.js"
+    "static/css/main.f4766fdd.css",
+    "static/js/main.81c4cb87.js"
   ]
 }
