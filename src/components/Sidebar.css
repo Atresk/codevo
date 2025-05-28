@@ -1,10 +1,11 @@
 .sidebar {
   position: fixed;
   left: 0;
-  top: 3.4rem;
+  top: 4.9rem;
   bottom: 0;
-  width: 240px;
-  background-color: #1c1c1c;
+  width: 15rem;
+  background-color: var(--nav-bg);
+  border-right: thin solid var(--text-color);
   color: white;
   padding: 1rem;
   transition: transform 0.3s ease;
@@ -12,17 +13,8 @@
   z-index: 900;
 }
 
-.sidebar.collapsed {
-  transform: translateX(-100%);
-}
-
-.collapse-btn {
-  background: none;
-  color: white;
-  font-size: 1.2rem;
-  border: none;
-  margin-bottom: 1rem;
-  cursor: pointer;
+.sidebar.open {
+  transform: translateX(0);
 }
 
 .topic {
@@ -40,4 +32,10 @@
 .subtopics {
   list-style: none;
   padding-left: 1rem;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+          transform: translateX(-100%);
+    }
 }

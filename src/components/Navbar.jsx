@@ -4,7 +4,7 @@ import './Navbar.css';
 import logo from '../assets/logo.png';
 
 export default function Navbar() {
-  const [menuOpen, setMenuOpen] = useState(false);
+  const [navMenuOpen, setNavMenuOpen] = useState(false);
   const [theme, setTheme] = useState('light');
 
   useEffect(() => {
@@ -27,7 +27,7 @@ export default function Navbar() {
           <h1>Codevo</h1>
         </div>
 
-        <ul className={`nav-links ${menuOpen ? 'show' : ''}`}>
+        <ul className={`nav-links ${navMenuOpen ? 'show' : ''}`}>
           <li>
             <Link to="/">首頁</Link>
           </li>
@@ -46,7 +46,7 @@ export default function Navbar() {
           <button className="icon-button" title="站內搜尋">
             🔍
           </button>
-          <button className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
+          <button className="hamburger" onClick={() => setNavMenuOpen(!navMenuOpen)}>
             ☰
           </button>
         </div>

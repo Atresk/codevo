@@ -2,8 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Sidebar.css';
 
-export default function Sidebar() {
-  const [collapsed, setCollapsed] = useState(false);
+export default function Sidebar({ open }) {
   const [openTopics, setOpenTopics] = useState({});
 
   const toggleTopic = (topic) => {
@@ -14,10 +13,7 @@ export default function Sidebar() {
   };
   return (
     <>
-      <aside className={`sidebar ${collapsed ? 'collapsed' : ''}`}>
-        <button className="collapse-btn" onClick={() => setCollapsed(!collapsed)}>
-          ☰
-        </button>
+      <aside className={`sidebar ${open ? 'open' : ''}`}>
         <div className="sidebar-content">
           {['語言教學', '練習區塊', '資源分享'].map((title) => (
             <div key={title} className="topic">

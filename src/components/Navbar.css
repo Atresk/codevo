@@ -3,6 +3,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 0.8rem 1rem 0.5rem 1rem;
+  height: 3.5rem;
   background-color: var(--nav-bg);
   color: var(--text-color);
   border-bottom: thin solid var(--text-color);
@@ -13,16 +14,14 @@
   align-items: center;
   gap: 1rem;
 }
-
 .left h1 {
   margin: auto;
 }
 
 .logo {
-  width: 8vw;
-  height: 8vw;
-  max-width: 32px;
-  max-height: 32px;
+  width: 2rem;
+  height: 2rem;
+  image-rendering: pixelated;
 }
 
 .hamburger {
@@ -36,7 +35,6 @@
   gap: 1rem;
   margin: auto;
 }
-
 .nav-links li a {
   text-decoration: none;
   color: inherit;
@@ -59,7 +57,6 @@
     margin: auto;
 }
 
-/* 響應式設計 */
 @media (max-width: 768px) {
   .hamburger {
     display: flex;
@@ -74,8 +71,8 @@
     display: none;
     flex-direction: column;
     position: absolute;
-    top: 60px;
-    left: 10px;
+    top: 4rem;
+    right: 10px;
     background: var(--nav-bg);
     padding: 1rem;
     border-radius: 8px;

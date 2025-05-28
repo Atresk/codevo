@@ -1,0 +1,22 @@
+.sidebar-toggle {
+  display: none;
+  
+}
+
+@media (max-width: 768px) {
+  .sidebar-toggle {
+    display: flex;
+    width: 3rem;
+    height: 3rem;
+    bottom: 0;
+    background-color: var(--nav-bg);
+  }
+  .sidebar-toggle button {
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: inherit;
+    cursor: pointer;
+    margin: 0.5rem;
+  }
+}
