@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
 import logo from '../assets/logo.png';
+import Glitch from '../utils/Glitch';
 
 export default function Navbar() {
   const [navMenuOpen, setNavMenuOpen] = useState(false);
@@ -29,13 +30,13 @@ export default function Navbar() {
 
         <ul className={`nav-links ${navMenuOpen ? 'show' : ''}`}>
           <li>
-            <Link to="/">首頁</Link>
+            <Link to="/"><Glitch>首頁</Glitch></Link>
           </li>
           <li>
-            <Link to="/Learn">學習</Link>
+            <Link to="/Learn"><Glitch>學習</Glitch></Link>
           </li>
           <li>
-            <Link to="/">關於</Link>
+            <Link to="/"><Glitch>關於</Glitch></Link>
           </li>
         </ul>
 

@@ -30,12 +30,24 @@
 }
 
 .subtopics {
-  list-style: none;
-  padding-left: 1rem;
+    list-style: none;
+    padding-left: 1rem;
+}
+
+.subtopics li {
+  padding: 0.25rem 0rem;
+}
+.subtopics li a,
+.subtopics li .no-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  color: inherit;
 }
 
 @media (max-width: 768px) {
-    .sidebar {
-          transform: translateX(-100%);
-    }
+  .sidebar {
+    transform: translateX(-100%);
+  }
 }

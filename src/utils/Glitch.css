@@ -23,18 +23,18 @@
 }
 
 .glitch-on-hover:hover::after {
-  animation: glitch-universal 1.3s infinite steps(2, end);
+  animation: glitch-universal 1.8s infinite steps(2, end);
   opacity: 0.8;
 }
 
 @keyframes glitch-universal {
   0% {
     clip-path: inset(80% 0 0 0);
-    transform: translate(-2px, -2px);
+    transform: translate(-3px, -3px);
   }
   20% {
     clip-path: inset(0 0 85% 0);
-    transform: translate(2px, 2px);
+    transform: translate(3px, 3px);
   }
   40% {
     clip-path: inset(30% 0 30% 0);

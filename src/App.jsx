@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
-import GlitchEffectInjector from './utils/GlitchEffectInjector';
 import Home from './pages/Home';
 import Navbar from './components/Navbar';
 import Sidebar from './components/Sidebar';
@@ -20,21 +19,22 @@ function App() {
   };
 
   return (
-    <Router>
-        <GlitchEffectInjector />
-      <div onClick={handleGlobalClick}>
-        <Navbar />
-        <div className="sidebar-toggle">
-          <button onClick={() => setSidebarOpen(!sidebarOpen)}>☰</button>
-        </div>
-        <Sidebar open={sidebarOpen} />
+    <>
+      <Router>
+        <div onClick={handleGlobalClick}>
+          <Navbar />
+          <div className="sidebar-toggle">
+            <button onClick={() => setSidebarOpen(!sidebarOpen)}>☰</button>
+          </div>
+          <Sidebar open={sidebarOpen} />
 
-        <Routes>
-          <Route path="/" element={<Home sidebarOpen={sidebarOpen} />} />
-          <Route path="/Learn" element={<Learn />} />
-        </Routes>
-      </div>
-    </Router>
+          <Routes>
+            <Route path="/" element={<Home sidebarOpen={sidebarOpen} />} />
+            <Route path="/Learn" element={<Learn />} />
+          </Routes>
+        </div>
+      </Router>
+    </>
   );
 }
 
