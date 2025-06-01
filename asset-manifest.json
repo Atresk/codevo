@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/codevo/static/css/main.500d7cff.css",
-    "main.js": "/codevo/static/js/main.6c23fe24.js",
+    "main.css": "/codevo/static/css/main.66a2391a.css",
+    "main.js": "/codevo/static/js/main.e58a4bc8.js",
     "static/media/Cubic_11.ttf": "/codevo/static/media/Cubic_11.8d0c38211f3a4791db6f.ttf",
     "static/media/Cubic_11.woff": "/codevo/static/media/Cubic_11.ac82ad78e671a3456e71.woff",
     "static/media/Cubic_11.woff2": "/codevo/static/media/Cubic_11.d8eabedbc8d5ffc0ce5a.woff2",
     "index.html": "/codevo/index.html",
-    "main.500d7cff.css.map": "/codevo/static/css/main.500d7cff.css.map",
-    "main.6c23fe24.js.map": "/codevo/static/js/main.6c23fe24.js.map"
+    "main.66a2391a.css.map": "/codevo/static/css/main.66a2391a.css.map",
+    "main.e58a4bc8.js.map": "/codevo/static/js/main.e58a4bc8.js.map"
   },
   "entrypoints": [
-    "static/css/main.500d7cff.css",
-    "static/js/main.6c23fe24.js"
+    "static/css/main.66a2391a.css",
+    "static/js/main.e58a4bc8.js"
   ]
 }
