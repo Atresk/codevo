@@ -1,0 +1,43 @@
+.markdown-viewer {
+  line-height: 1.6;
+  color: #333;
+  padding: 1rem;
+  background: #919191;
+}
+
+.markdown-viewer h1, .markdown-viewer h2, .markdown-viewer h3 {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 0.3rem;
+}
+
+.markdown-viewer code {
+  background: #f4f4f4;
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+}
+
+.markdown-viewer pre code {
+  display: block;
+  background: #2d2d2d;
+  color: #f8f8f2;
+  padding: 1rem;
+  overflow-x: auto;
+  border-radius: 6px;
+}
+
+.markdown-viewer table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+}
+
+.markdown-viewer th, .markdown-viewer td {
+  border: 1px solid #ddd;
+  padding: 0.5rem 1rem;
+  text-align: left;
+}
+
+.markdown-viewer a {
+  color: #0070f3;
+  text-decoration: underline;
+}

@@ -1,17 +1,21 @@
 .card {
-  max-height: 15rem;
-  max-width: 360px;
-  padding: 1rem;
-  position: relative;
-  background-image: url(../assets/border.png);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-position: center;
-  image-rendering: pixelated;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
+  position: relative;
+  padding: 1rem;
+  margin: 1rem;
+  background-color: var(--card--bg);
+  box-shadow:
+    0px 5px var(--card--bs),
+    0px -5px var(--card--bs),
+    5px 0px var(--card--bs),
+    -5px 0px var(--card--bs),
+    0px 10px var(--card--bs-s),
+    5px 5px var(--card--bs-s),
+    -5px 5px var(--card--bs-s),
+    inset 0px 5px var(--card--bs-ts1),
+    inset 0px -5px var(--card--bs-ts2)
 }
 
 .card-header {
@@ -30,7 +34,7 @@
 .card-title {
   font-size: 1rem;
   margin: 0;
-  color: #000;
+  color: var(--text-color);
 }
 
 .card-title.no-image {
@@ -40,5 +44,5 @@
 .card-description {
   font-size: 0.9rem;
   line-height: 1.4;
-  color: #333;
+  color: var(--text-color);
 }

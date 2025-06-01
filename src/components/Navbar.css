@@ -1,4 +1,9 @@
 .navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -39,6 +44,13 @@
   text-decoration: none;
   color: inherit;
   font-size: 1.5rem;
+  margin: 1rem;
+}
+.nav-links li:hover {
+    background-color: rgba(0, 0, 0, 0.116);
+}
+.nav-links li a:active {
+    transform: translateY(5px);
 }
 
 .icon-button {
@@ -55,7 +67,7 @@
   align-items: center;
 }
 .right button {
-    margin: auto;
+  margin: auto;
 }
 
 @media (max-width: 768px) {

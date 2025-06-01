@@ -16,7 +16,7 @@ export default function Sidebar({ open }) {
   const topics = {
     語言教學: [
       { name: 'Python 入門', path: '/learn/python' },
-      { name: 'JavaScript 基礎' }, // 無路由
+      { name: 'JavaScript 基礎' },
       { name: 'C++ 語法', path: '/learn/cpp' },
     ],
     練習區塊: [{ name: '變數練習' }, { name: '迴圈挑戰', path: '/practice/loops' }],

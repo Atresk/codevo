@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
-import logo from '../assets/logo.png';
+import logoDark from '../assets/logo.png';
+import logoLight from '../assets/logo0.png';
 import Glitch from '../utils/Glitch';
 
 export default function Navbar() {
@@ -24,19 +25,25 @@ export default function Navbar() {
     <>
       <nav className="navbar">
         <div className="left">
-          <img src={logo} className="logo" alt="logo" />
+          <img src={theme === 'light' ? logoLight : logoDark} className="logo" alt="logo" />
           <h1>Codevo</h1>
         </div>
 
         <ul className={`nav-links ${navMenuOpen ? 'show' : ''}`}>
           <li>
-            <Link to="/"><Glitch>首頁</Glitch></Link>
+            <Link to="/">
+              <Glitch>首頁</Glitch>
+            </Link>
           </li>
           <li>
-            <Link to="/Learn"><Glitch>學習</Glitch></Link>
+            <Link to="/Learn">
+              <Glitch>學習</Glitch>
+            </Link>
           </li>
           <li>
-            <Link to="/"><Glitch>關於</Glitch></Link>
+            <Link to="/">
+              <Glitch>關於</Glitch>
+            </Link>
           </li>
         </ul>
 

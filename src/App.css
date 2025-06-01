@@ -1,15 +1,25 @@
 .sidebar-toggle {
   display: none;
-  
+  margin-top: 5rem;
+}
+
+main {
+  background-color: var(--main--bg);
+  margin-top: 8rem;
+  padding: 0rem 1rem 0.5rem 18rem;
 }
 
 @media (max-width: 768px) {
+  main {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+  }
   .sidebar-toggle {
     display: flex;
     width: 3rem;
     height: 3rem;
     bottom: 0;
-    background-color: var(--nav-bg);
+    background-color: var(--main--bg);
   }
   .sidebar-toggle button {
     font-size: 1.5rem;
