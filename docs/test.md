@@ -1,24 +1,3 @@
----
-title: Script Forms
-category: Tutorials
-tags:
-    - experimental
-mentions:
-    - DrakPlay
-    - cda94581
-    - FrankyRay
-    - MedicalJewel105
-    - Worldwidebrine
-    - Fabrimat
-    - Axisander
-    - JaylyDev
-    - Herobrine643928
-    - SmokeyStack
-    - ThomasOrs
-    - kumja1
-description: Create form UIs without the need for JSON UI-wrangling.
----
-
 ::: warning
 The Script API is currently in active development, and breaking changes are frequent. This page assumes the format of Minecraft 1.20.60
 :::
