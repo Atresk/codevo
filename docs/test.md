@@ -1,7 +1,3 @@
-::: warning
-The Script API is currently in active development, and breaking changes are frequent. This page assumes the format of Minecraft 1.20.60
-:::
-
 In version 1.18.30, Minecraft released a wonderful new script module, `@minecraft/server-ui` (formerly named `mojang-minecraft-ui`). With this module, we can create form UIs without the need for JSON UI-wrangling.
 
 ## Setup
@@ -90,7 +86,7 @@ form.button("Murder Mystery", "textures/items/iron_sword");
 form.button("Bedwars", "textures/minigames/bedwars.png");
 ```
 
-![image](/public/image/logo.png)
+![image](../image/logo.png)
 
 ### MessageFormData
 Message form is a form that consists of 2 buttons with a large description (body). This form is great for Yes/No questions or OK/Cancel forms.
