@@ -7,8 +7,7 @@ export default function Glitch({ children, as = 'span', className = '', ...props
     <Tag
       className={`glitch-on-hover ${className}`}
       data-glitch={typeof children === 'string' ? children : ''}
-      {...props}
-    >
+      {...props}>
       {children}
     </Tag>
   );

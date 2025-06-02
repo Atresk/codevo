@@ -22,8 +22,8 @@
   clip-path: var(--slice-0, inset(50% 50% 50% 50%));
 }
 
-.glitch-on-hover:hover::after {
-  animation: glitch-universal 1.8s infinite steps(2, end);
+.glitch-on-hover:hover .glitch-on-hover::after {
+  animation: glitch-universal 1.85s infinite steps(2, end);
   opacity: 0.8;
 }
 
@@ -53,4 +53,3 @@
     transform: translate(0);
   }
 }
-

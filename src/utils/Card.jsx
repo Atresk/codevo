@@ -1,16 +1,15 @@
 import React from 'react';
 import './Card.css';
+import { Link } from 'react-router-dom';
 
-export default function Card({ title, description, image = null }) {
+export default function Card({ title, description, to }) {
   return (
     <div className="card">
-      {image && (
-        <div className="card-header">
-          <img src={image} alt="icon" className="card-img" />
-          <h3 className="card-title">{title}</h3>
-        </div>
-      )}
-      {!image && <h3 className="card-title no-image">{title}</h3>}
+      <h3 className="card-title no-image">
+        <Link to={to} className="card-link">
+          {title}
+        </Link>
+      </h3>
       <p className="card-description">{description}</p>
     </div>
   );

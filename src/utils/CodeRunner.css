@@ -1,0 +1,66 @@
+.code-runner {
+  max-width: 1000px;
+  margin: auto;
+  padding: 1rem;
+  box-shadow:
+    0px 5px var(--card--bs),
+    0px -5px var(--card--bs),
+    5px 0px var(--card--bs),
+    -5px 0px var(--card--bs),
+    0px 10px var(--card--bs-s),
+    5px 5px var(--card--bs-s),
+    -5px 5px var(--card--bs-s),
+    inset 0px 5px var(--card--bs-ts1),
+    inset 0px -5px var(--card--bs-ts2);
+}
+
+.code-runner select {
+  padding: 0.5rem;
+  font-size: 1rem;
+  background: var(--code--bg);
+  color: var(--code--text);
+  border: 1px solid #444;
+  border-radius: 4px;
+}
+
+.code-editor {
+  margin-top: 1rem;
+  border: 1px solid #333;
+}
+
+.code-input {
+  margin-top: 1rem;
+  width: 100%;
+  max-width: 100%;
+  padding: 0.2rem;
+  background: var(--code--bg);
+  color: var(--code--text);
+  border: 1px solid #444;
+  resize: none;
+  box-sizing: border-box;
+}
+
+.run-button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  background-color: var(--btn-bg, #007acc);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.run-button:hover {
+  background-color: #005eaa;
+}
+
+.output-box {
+  margin-top: 1rem;
+  background: var(--code--bg);
+  color: var(--code--text);
+  padding: 1rem;
+  white-space: pre-wrap;
+  border: 1px solid #333;
+  min-height: 3rem;
+}

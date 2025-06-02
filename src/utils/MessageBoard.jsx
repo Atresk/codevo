@@ -21,7 +21,6 @@ function MessageBoard() {
       });
   }, []);
 
-  // 送出留言
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -66,8 +65,7 @@ function MessageBoard() {
             display: 'block',
             marginBottom: '10px',
             width: '100%',
-          }}
-        ></textarea>
+          }}></textarea>
         <button type="submit">送出留言</button>
       </form>
 

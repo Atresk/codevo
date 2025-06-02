@@ -4,7 +4,7 @@
   justify-content: center;
   position: relative;
   padding: 1rem;
-  margin: 1rem;
+  margin: 0.5rem;
   background-color: var(--card--bg);
   box-shadow:
     0px 5px var(--card--bs),
@@ -15,34 +15,32 @@
     5px 5px var(--card--bs-s),
     -5px 5px var(--card--bs-s),
     inset 0px 5px var(--card--bs-ts1),
-    inset 0px -5px var(--card--bs-ts2)
-}
-
-.card-header {
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-  margin-bottom: 0.5rem;
-}
-
-.card-img {
-  width: 40px;
-  height: 40px;
-  image-rendering: pixelated;
+    inset 0px -5px var(--card--bs-ts2);
 }
 
 .card-title {
-  font-size: 1rem;
+  font-size: 2rem;
   margin: 0;
   color: var(--text-color);
 }
 
 .card-title.no-image {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.1rem;
+}
+
+.card-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.card-link:hover {
+  text-decoration: underline;
 }
 
 .card-description {
   font-size: 0.9rem;
   line-height: 1.4;
+  margin-left: 1rem;
+  margin-bottom: 3rem;
   color: var(--text-color);
 }

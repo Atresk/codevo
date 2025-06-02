@@ -1,10 +1,10 @@
 import React from 'react';
 import MarkdownViewer from '../utils/MarkdownViewer';
 
-export default function Page_1() {
+export default function Page({ path }) {
   return (
     <main>
-        <MarkdownViewer src={"/docs/test.md"}/>
+      <MarkdownViewer src={path} />
     </main>
   );
 }

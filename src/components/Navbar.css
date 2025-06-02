@@ -9,9 +9,10 @@
   align-items: center;
   padding: 0.8rem 1rem 0.5rem 1rem;
   height: 3.5rem;
-  background-color: var(--nav-bg);
-  color: var(--text-color);
-  border-bottom: thin solid var(--text-color);
+  background-color: var(--nav--bg);
+  color: var(--text-color2);
+  box-shadow: 0px 5px var(--card--bs2);
+  overflow: visible;
 }
 
 .left {
@@ -31,7 +32,49 @@
 
 .hamburger {
   display: none;
-  margin: auto;
+  height: 2.5rem;
+  width: 2.5rem;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border-radius: 8px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 5px;
+  z-index: 1001;
+  overflow: visible;
+}
+
+.hamburger span {
+  display: block;
+  width: 20px;
+  height: 3px;
+  background-color: var(--text-color);
+  border-radius: 2px;
+  transition:
+    transform 0.3s ease,
+    opacity 0.3s ease;
+}
+
+.hamburger.open span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(6.5px, -6.5px);
+}
+
+.hamburger:hover {
+  background-color: var(--nav--li-hover);
+}
+.hamburger:active {
+  transform: translateY(5px);
 }
 
 .nav-links {
@@ -40,26 +83,21 @@
   gap: 1rem;
   margin: auto;
 }
+.nav-links li {
+  border-radius: 8px;
+}
 .nav-links li a {
+  display: block;
   text-decoration: none;
   color: inherit;
   font-size: 1.5rem;
-  margin: 1rem;
+  padding: 0.8rem;
 }
 .nav-links li:hover {
-    background-color: rgba(0, 0, 0, 0.116);
+  background-color: var(--nav--li-hover);
 }
-.nav-links li a:active {
-    transform: translateY(5px);
-}
-
-.icon-button {
-  background: none;
-  border: none;
-  font-size: 1.2rem;
-  margin-left: 1rem;
-  cursor: pointer;
-  color: inherit;
+.nav-links li:active {
+  transform: translateY(5px);
 }
 
 .right {
@@ -67,31 +105,37 @@
   align-items: center;
 }
 .right button {
-  margin: auto;
+  height: 2.5rem;
+  width: 2.5rem;
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border-radius: 8px;
+}
+
+.right button:hover {
+  background-color: var(--nav--li-hover);
+}
+.right button:active {
+  transform: translateY(5px);
+}
+
+.right .theme-toggle img {
+  width: 18px;
+  height: 18px;
+  image-rendering: pixelated;
 }
 
 @media (max-width: 768px) {
   .hamburger {
     display: flex;
-    font-size: 1.5rem;
-    background: none;
-    border: none;
-    color: inherit;
-    cursor: pointer;
   }
 
   .nav-links {
     display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 4rem;
-    right: 10px;
-    background: var(--nav-bg);
-    padding: 1rem;
-    border-radius: 8px;
-  }
-
-  .nav-links.show {
-    display: flex;
   }
 }

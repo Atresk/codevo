@@ -14,22 +14,44 @@ export default function Sidebar({ open }) {
   };
 
   const topics = {
-    語言教學: [
-      { name: 'Python 入門', path: '/learn/python' },
-      { name: 'JavaScript 基礎' },
-      { name: 'C++ 語法', path: '/learn/cpp' },
+    'C++': [
+      { name: '入門及環境建置', path: 'C++/1' },
+      { name: '基本運算教學', path: 'C++/3' },
+      { name: '陣列教學', path: 'C++/2' },
+      { name: '迴圈教學', path: 'C++/4' },
+      { name: '函式教學', path: 'C++/5' },
+      { name: '類別（Class）教學', path: 'C++/6' },
     ],
-    練習區塊: [{ name: '變數練習' }, { name: '迴圈挑戰', path: '/practice/loops' }],
-    資源分享: [
-      { name: '推薦網站', path: '/resources/sites' },
-      { name: 'YouTube 頻道' },
-      { name: '線上工具', path: '/resources/tools' },
-    ],
+    Python: [{ name: '入門及環境建置', path: 'Python/1' }],
+    JavaScript: [{ name: '入門及環境建置', path: 'JavaScript/1' }],
   };
 
   return (
     <>
       <aside className={`sidebar ${open ? 'open' : ''}`}>
+        <ul className="sidebar-nav-links">
+          <Glitch as="li">
+            <Link to="/">
+              <Glitch>首頁</Glitch>
+            </Link>
+          </Glitch>
+          <Glitch as="li">
+            <Link to="/Exercise">
+              <Glitch>練習</Glitch>
+            </Link>
+          </Glitch>
+          <Glitch as="li">
+            <Link to="/Compiler">
+              <Glitch>線上編譯器</Glitch>
+            </Link>
+          </Glitch>
+          <Glitch as="li">
+            <Link to="/About">
+              <Glitch>關於</Glitch>
+            </Link>
+          </Glitch>
+        </ul>
+        <hr></hr>
         <div className="sidebar-content">
           {Object.entries(topics).map(([title, subitems]) => (
             <div key={title} className="topic">

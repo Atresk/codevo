@@ -1,17 +1,29 @@
 .markdown-viewer {
   line-height: 1.6;
-  color: #333;
+  color: var(--text-color3);
   padding: 1rem;
-  background: #919191;
+  background: var(--nav--bg2);
+  box-shadow:
+    0px 5px var(--card--bs),
+    0px -5px var(--card--bs),
+    5px 0px var(--card--bs),
+    -5px 0px var(--card--bs),
+    0px 10px var(--card--bs-s),
+    5px 5px var(--card--bs-s),
+    -5px 5px var(--card--bs-s),
+    inset 0px 5px var(--card--bs-ts1),
+    inset 0px -5px var(--card--bs-ts2);
 }
 
-.markdown-viewer h1, .markdown-viewer h2, .markdown-viewer h3 {
+.markdown-viewer h1,
+.markdown-viewer h2,
+.markdown-viewer h3 {
   border-bottom: 1px solid #ddd;
   padding-bottom: 0.3rem;
 }
 
 .markdown-viewer code {
-  background: #f4f4f4;
+  background: var(--text-bg);
   padding: 0.2em 0.4em;
   border-radius: 4px;
 }
@@ -31,7 +43,8 @@
   margin: 1rem 0;
 }
 
-.markdown-viewer th, .markdown-viewer td {
+.markdown-viewer th,
+.markdown-viewer td {
   border: 1px solid #ddd;
   padding: 0.5rem 1rem;
   text-align: left;
