@@ -63,7 +63,7 @@ export default function CodeRunner() {
           if (e.target.value === 'python3') setCode('print("Hello, world!")');
           else if (e.target.value === 'javascript') setCode('console.log("Hello, world!")');
           else if (e.target.value === 'cpp')
-            setCode('#include <iostream>\nint main() { std::cout << "Hello, world!"; return 0; }');
+            setCode('#include <iostream>\nusing namespace std;\nint main() {\n    cout << "Hello, world!";\n    return 0;\n}');
         }}>
         <option value="python3">Python</option>
         <option value="javascript">JavaScript</option>
